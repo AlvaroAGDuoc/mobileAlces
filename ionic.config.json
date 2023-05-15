@@ -1,0 +1,7 @@
+{
+  "name": "mobileAlces",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
