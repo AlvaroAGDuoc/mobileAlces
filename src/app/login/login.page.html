@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="8">
+      <img class="logo" src="../../assets/images/logo.png" />
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="ion-text-center">
+    <div class="seccion2">
+      <div>
+        <ion-card-title class="white">Inicio de sesion</ion-card-title>
+
+        <ion-card-content>
+          <ion-input
+            label="Email"
+            label-placement="floating"
+            fill="outline"
+            placeholder="Ingresa tu email"
+            class="white"
+          ></ion-input>
+
+          <ion-input
+            class="white"
+            label="Contraseña"
+            label-placement="floating"
+            fill="outline"
+            placeholder="Ingresa tu contraseña"
+          ></ion-input>
+
+          <ion-row class="ion-justify-content-end">
+            <ion-col size="4">
+              <ion-button routerLink="/home" fill="solid">Ingresar</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </div>
+    </div>
+  </ion-card>
+
+  <ion-card class="ion-text-center">
+    <div class="seccion2">
+      <div>
+        <ion-card-title class="titulo2"
+          >¡Hazte socio/a de Los Alces!</ion-card-title
+        >
+
+        <ion-card-content>
+          <p class="descripcion2">
+            Únete a la gran familia de los Alces y siente desde ya el orgullo de
+            ser socio/a del club más divertido del mundo
+          </p>
+          <a href="" class="join-club">¡Quiero ser parte de Los Alces F.C!</a>
+        </ion-card-content>
+      </div>
+    </div>
+  </ion-card>
+</ion-content>
