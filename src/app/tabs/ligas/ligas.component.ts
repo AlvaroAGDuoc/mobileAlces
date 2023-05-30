@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
@@ -6,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: './ligas.component.html',
   styleUrls: ['./ligas.component.scss'],
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule, HttpClientModule],
 })
 export class LigasComponent implements OnInit {
   constructor() {}

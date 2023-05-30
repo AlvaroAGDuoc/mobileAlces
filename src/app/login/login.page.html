@@ -11,53 +11,75 @@
     </ion-col>
   </ion-row>
 
-  <ion-card class="ion-text-center">
-    <div class="seccion2">
-      <div>
-        <ion-card-title class="white">Inicio de sesion</ion-card-title>
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <ion-card class="ion-text-center">
+      <div class="seccion2">
+        <div>
+          <ion-card-title class="white">Inicio de sesion</ion-card-title>
 
-        <ion-card-content>
-          <ion-input
-            label="Email"
-            label-placement="floating"
-            fill="outline"
-            placeholder="Ingresa tu email"
-            class="white"
-          ></ion-input>
+          <ion-card-content>
+            <ion-input
+              label="Email"
+              label-placement="floating"
+              fill="outline"
+              placeholder="Ingresa tu email"
+              class="white"
+              formControlName="email"
+              required
+            ></ion-input>
 
-          <ion-input
-            class="white"
-            label="Contraseña"
-            label-placement="floating"
-            fill="outline"
-            placeholder="Ingresa tu contraseña"
-          ></ion-input>
+            <span
+              *ngIf="
+              loginForm.get('email')?.touched && loginForm.get('email')?.errors?.['required']
+            "
+            >
+              Este campo es requerido
+            </span>
 
-          <ion-row class="ion-justify-content-end">
-            <ion-col size="4">
-              <ion-button routerLink="/home" fill="solid">Ingresar</ion-button>
-            </ion-col>
-          </ion-row>
-        </ion-card-content>
+            <ion-input
+              type="password"
+              class="white"
+              label="Contraseña"
+              label-placement="floating"
+              fill="outline"
+              placeholder="Ingresa tu contraseña"
+              formControlName="clave"
+              required
+            ></ion-input>
+            <span
+              *ngIf="
+              loginForm.get('clave')?.touched && loginForm.get('clave')?.errors?.['required']
+            "
+            >
+              Este campo es requerido
+            </span>
+
+            <ion-row class="ion-justify-content-end">
+              <ion-col size="4">
+                <ion-button fill="solid" type="submit">Ingresar</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </div>
       </div>
-    </div>
-  </ion-card>
+    </ion-card>
 
-  <ion-card class="ion-text-center">
-    <div class="seccion2">
-      <div>
-        <ion-card-title class="titulo2"
-          >¡Hazte socio/a de Los Alces!</ion-card-title
-        >
+    <ion-card class="ion-text-center">
+      <div class="seccion2">
+        <div>
+          <ion-card-title class="titulo2"
+            >¡Hazte socio/a de Los Alces!</ion-card-title
+          >
 
-        <ion-card-content>
-          <p class="descripcion2">
-            Únete a la gran familia de los Alces y siente desde ya el orgullo de
-            ser socio/a del club más divertido del mundo
-          </p>
-          <a href="" class="join-club">¡Quiero ser parte de Los Alces F.C!</a>
-        </ion-card-content>
+          <ion-card-content>
+            <p class="descripcion2">
+              Únete a la gran familia de los Alces y siente desde ya el orgullo
+              de ser socio/a del club más divertido del mundo
+            </p>
+            <a href="" class="join-club">¡Quiero ser parte de Los Alces F.C!</a>
+          </ion-card-content>
+        </div>
       </div>
-    </div>
-  </ion-card>
+    </ion-card>
+  </form>
 </ion-content>

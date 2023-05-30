@@ -1,27 +1,36 @@
-#container {
+.img {
+  width: 40px;
+  height: 40px;
+}
+
+.partido-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.goles-container {
+  display: flex;
+  align-items: center;
+}
+
+.vs {
+  margin: 0 10px;
+}
+
+.fecha {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 10px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+ion-button {
+  --background: #b37b3b9d;
+  --background-hover: #7e661a9f;
+  --background-activated: #7e661a9f;
+  --background-focused: #7e661a9f;
 }
