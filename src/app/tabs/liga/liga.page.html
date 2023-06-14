@@ -1,39 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>liga</ion-title>
+<ion-header >
+  <ion-toolbar color="dark" class="md"> 
+  <h1 class="ion-text-center" >Ligas</h1>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
   <ion-grid>
-    <ion-row>
-      <ion-col size="1" class="pos"
-        ><ion-text color="medium">#</ion-text>
-      </ion-col>
-      <ion-col size="7" class="estadistica2"
-        ><ion-text color="medium">EQUIPO</ion-text></ion-col
-      >
-      <ion-col size="1" class="estadistica"
-        ><ion-text color="medium">P</ion-text></ion-col
-      >
-      <ion-col size="2" class="estadistica"
-        ><ion-text color="medium">DIFF</ion-text></ion-col
-      >
-      <ion-col size="1" class="pts"
-        ><ion-text color="medium">PTS</ion-text></ion-col
-      >
+    <ion-row class="header-row">
+      <ion-col size="1.5" class="estadistica"><ion-text color="black">#</ion-text></ion-col>
+      <ion-col size="6" class="estadistica"><ion-text color="black">EQUIPO</ion-text></ion-col>
+      <ion-col size="1.5" class="estadistica"><ion-text color="black">P</ion-text></ion-col>
+      <ion-col size="1.5" class="estadistica"><ion-text color="black">DIFF</ion-text></ion-col>
+      <ion-col size="1.5" class="estadistica"><ion-text color="black">PTS</ion-text></ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col size="1" class="pos ion-margin-top">1</ion-col>
-      <ion-col size="7" class="estadistica2">
-        <ion-row class="ion-justify-content-start">
+    <ion-row class="data-row">
+      <ion-col size="1.5" class="pos ion-margin-top"><div class="circle">1</div></ion-col>
+      <ion-col size="6" class="estadistica2">
+        <ion-row class="ion-align-items-center">
           <ion-col size="3">
             <div>
-              <img
-                src="../../../assets/images/logo.png"
-                class="escudo"
-                alt=""
-              />
+              <img src="../../../assets/images/logo.png" class="escudo" alt="" />
             </div>
           </ion-col>
           <ion-col class="ion-margin-top" size="9">
@@ -41,14 +27,14 @@
           </ion-col>
         </ion-row>
       </ion-col>
-      <ion-col size="1" class="pts ion-margin-top">2</ion-col>
-      <ion-col size="2" class="pts ion-margin-top">2</ion-col>
-      <ion-col size="1" class="estadistica2 ion-margin-top">2</ion-col>
+      <ion-col size="1.5" class="pts ion-margin-top">2</ion-col>
+      <ion-col size="1.5" class="pts ion-margin-top">2</ion-col>
+      <ion-col size="1.5" class="estadistica2 ion-margin-top">2</ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col size="1" class="pos ion-margin-top">1</ion-col>
-      <ion-col size="7" class="estadistica2">
+      <ion-col size="1.5" class="pos ion-margin-top"><div class="circle">1</div></ion-col>
+      <ion-col size="6" class="estadistica2">
         <ion-row class="ion-justify-content-start">
           <ion-col size="3">
             <div>
@@ -64,9 +50,9 @@
           </ion-col>
         </ion-row>
       </ion-col>
-      <ion-col size="1" class="pts ion-margin-top">2</ion-col>
-      <ion-col size="2" class="pts ion-margin-top">2</ion-col>
-      <ion-col size="1" class="estadistica2 ion-margin-top">2</ion-col>
+      <ion-col size="1.5" class="pts ion-margin-top">2</ion-col>
+      <ion-col size="1.5" class="pts ion-margin-top">2</ion-col>
+      <ion-col size="1.5" class="estadistica2 ion-margin-top">2</ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

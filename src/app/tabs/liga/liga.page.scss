@@ -3,13 +3,17 @@
   width: 20px;
   font-size: 11px;
 }
+ ion-content{
+  --background: #DCCAB0; 
+  --background: linear-gradient(to bottom, #a77d4d, #DCCAB0);
 
+}
 .body {
   text-align: center;
+  
 }
 
 .pts {
-  color: white;
   text-align: center;
   font-size: 11px;
 }
@@ -26,6 +30,46 @@
 }
 .escudo {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+  .header-row {
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  .data-row {
+    padding: 10px 0;
+  }
+
+  .pos,
+  .estadistica,
+  .estadistica2,
+  .pts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ion-margin-top {
+    margin-top: 10px;
+  }
+ion-grid{
+
+  border-radius: 10%;
+  background-color: #dccab042;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #4aa134;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
