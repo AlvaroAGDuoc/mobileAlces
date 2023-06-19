@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
@@ -7,12 +7,9 @@ import { Router } from '@angular/router';
 })
 export class InicioPage implements OnInit {
 
-  constructor(private route: Router) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
- iniciarSesion(){
-  this.route.navigate(['/tabs/ligas']);
- }
 }

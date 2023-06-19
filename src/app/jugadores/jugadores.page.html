@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>jugadores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<app-loading *ngIf="loading"></app-loading>
+
+<ion-content>
+  <ion-card *ngFor="let jugador of jugadores">
+    <ion-avatar slot="start">
+      <img
+        [alt]="jugador.nombre"
+        [src]="'http://localhost:3001/imagen/' + jugador.fotografia"
+      />
+    </ion-avatar>
+    <ion-label> {{jugador.nombre}} {{jugador.apellido}}</ion-label>
+    <p>Categoria: {{ jugador.miembroClubs[0].equipo.categorium.nombre }}</p>
+    <ion-button routerLink="info/{{jugador.miembroClubs[0].id}}"
+      >Ver mas info</ion-button
+    >
+  </ion-card>
+</ion-content>

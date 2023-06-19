@@ -7,14 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { JugadoresPageRoutingModule } from './jugadores-routing.module';
 
 import { JugadoresPage } from './jugadores.page';
+import { LoadingComponent } from 'src/app/shared/components/loading/loading.component';
+import { FichaJugadorComponent } from './components/ficha-jugador/ficha-jugador.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    JugadoresPageRoutingModule
+    JugadoresPageRoutingModule,
+    LoadingComponent,
   ],
-  declarations: [JugadoresPage]
+  declarations: [JugadoresPage, FichaJugadorComponent],
 })
 export class JugadoresPageModule {}

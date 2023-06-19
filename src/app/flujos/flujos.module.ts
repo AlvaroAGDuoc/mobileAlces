@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { FlujosPageRoutingModule } from './flujos-routing.module';
 
 import { FlujosPage } from './flujos.page';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FlujosPageRoutingModule
+    FlujosPageRoutingModule,
+    HttpClientModule,
   ],
-  declarations: [FlujosPage]
+  declarations: [FlujosPage],
 })
 export class FlujosPageModule {}

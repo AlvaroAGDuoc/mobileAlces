@@ -5,16 +5,37 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'inicio', // Establece el nombre de la ruta de la página que deseas como página raíz
-    pathMatch: 'full'
+    pathMatch: 'full',
+  },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('./login/login.module').then((m) => m.LoginModule),
   },
   {
     path: 'inicio',
-    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+    loadChildren: () =>
+      import('./inicio/inicio.module').then((m) => m.InicioPageModule),
   },
   {
-    path: '',
+    path: 'flujos',
     loadChildren: () =>
-      import('./tabs/tabs.module').then((m) => m.TabsPageModule),
+      import('./flujos/flujos.module').then((m) => m.FlujosPageModule),
+  },
+  {
+    path: 'jugadores',
+    loadChildren: () =>
+      import('./jugadores/jugadores.module').then((m) => m.JugadoresPageModule),
+  },
+  {
+    path: 'liga',
+    loadChildren: () =>
+      import('./liga/liga.module').then((m) => m.LigaPageModule),
+  },
+  {
+    path: 'perfil',
+    loadChildren: () =>
+      import('./perfil/perfil.module').then((m) => m.PerfilPageModule),
   },
 ];
 @NgModule({
