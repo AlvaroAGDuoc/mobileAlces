@@ -1,13 +1,33 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>perfil</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mi perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<app-loading *ngIf="loading"></app-loading>
+
+<ion-content *ngIf="!loading">
+  <img
+    [src]="
+
+     'http://localhost:3001/imagen/' + usuario.fotografia
+
+"
+    [alt]="usuario.nombre"
+  />
+  <ion-list>
+    <ion-item>
+      <ion-text color="ligth">{{usuario.nombre}} {{usuario.apellido}}</ion-text>
+    </ion-item>
+
+    <ion-item><ion-text color="ligth">{{usuario.rut}} </ion-text></ion-item>
+    <ion-item> <ion-text color="ligth">{{usuario.email}} </ion-text></ion-item>
+    <ion-item>
+      <ion-text color="ligth">{{usuario.nacionalidad}} </ion-text></ion-item
+    >
+    <ion-item> {{usuario.telefono}}</ion-item>
+  </ion-list>
 </ion-content>

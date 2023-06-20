@@ -3,19 +3,26 @@
   width: 20px;
   font-size: 11px;
 }
- ion-content{
-  --background: #DCCAB0; 
-  --background: linear-gradient(to bottom, #a77d4d, #DCCAB0);
-
+ion-content {
+  --background: #dccab0;
+  --background: linear-gradient(to bottom, #a77d4d, #dccab0);
 }
 .body {
   text-align: center;
-  
 }
 
 .pts {
   text-align: center;
   font-size: 11px;
+}
+
+.golesMenos {
+  color: rgb(185, 77, 77);
+  font-weight: bold;
+}
+.golesMas {
+  color: rgb(45, 160, 45);
+  font-weight: bold;
 }
 
 .estadistica {
@@ -32,36 +39,34 @@
   border-radius: 50%;
   width: 100%;
   max-width: 50px;
-  height: auto;
 }
-  .header-row {
-    font-weight: bold;
-    padding: 10px 0;
-  }
+.header-row {
+  font-weight: bold;
+  padding: 10px 0;
+}
 
-  .data-row {
-    padding: 10px 0;
-  }
+.data-row {
+  padding: 10px 0;
+}
 
-  .pos,
-  .estadistica,
-  .estadistica2,
-  .pts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.pos,
+.estadistica,
+.estadistica2,
+.pts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .ion-margin-top {
-    margin-top: 10px;
-  }
-ion-grid{
-
+.ion-margin-top {
+  margin-top: 10px;
+}
+ion-grid {
   border-radius: 10%;
   background-color: #dccab042;
 }
 
-.circle {
+.circle1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +74,32 @@ ion-grid{
   height: 25px;
   border-radius: 50%;
   background-color: #4aa134;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.circle2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #a5ca61;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.circle3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #8f0000;
   color: white;
   font-weight: bold;
   text-align: center;

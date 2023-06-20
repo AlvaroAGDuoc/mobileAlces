@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LigaService } from './services/liga.service';
+import { Estadistica } from './interfaces/estadisticas';
 
 @Component({
   selector: 'app-liga',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./liga.page.scss'],
 })
 export class LigaPage implements OnInit {
-
-  constructor() { }
+  loading: boolean = true;
+  estadisticas!: Estadistica;
+  constructor(private ligaService: LigaService) {}
 
   ngOnInit() {
+    this.getLiga();
   }
 
+  getLiga() {
+    this.loading = true;
+    this.ligaService.getEstadisticas('masculina').subscribe((data) => {
+      this.estadisticas = data;
+
+      this.estadisticas.estadisticasLiga.sort((a, b) => b.puntos - a.puntos);
+      console.log(this.estadisticas);
+      this.loading = false;
+    });
+  }
 }

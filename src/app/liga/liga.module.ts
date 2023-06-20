@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { LigaPageRoutingModule } from './liga-routing.module';
 
 import { LigaPage } from './liga.page';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LigaPageRoutingModule
+    LigaPageRoutingModule,
+    SharedModule,
   ],
-  declarations: [LigaPage]
+  declarations: [LigaPage],
 })
 export class LigaPageModule {}

@@ -1,4 +1,13 @@
-<div *ngIf="!loading">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ficha jugador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="!loading">
   <ion-list>
     <ion-item>
       <ion-label
@@ -34,4 +43,4 @@
       {{ info.partidos }}
     </ion-label>
   </ion-list>
-</div>
+</ion-content>
