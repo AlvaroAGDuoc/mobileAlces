@@ -1,3 +1,28 @@
-img {
-  height: 200px;
+
+ion-content {
+  --background: #dccab0;
+  --background: linear-gradient(to bottom, #a77d4d, #dccab0);
+}
+.perfil{
+  height: 10vw
+}
+ion-card{
+  --background: #00000000;
+  height: 25vh;
+}
+.icono{
+  height: 15vh;
+}
+img{
+  margin-top: 3vh;
+}
+.centrado{
+  align-items: center;
+  display: flex;
+}
+h1{
+  text-align: center;
+}
+ion-card-title{
+  font-weight: 700;
 }

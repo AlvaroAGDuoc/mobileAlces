@@ -1,0 +1,18 @@
+ion-content {
+    --background: #dccab0;
+    --background: linear-gradient(to bottom, #a77d4d, #dccab0);
+  }
+  ion-item {
+    --ion-item-background:#015f0100;
+    border-color: rgba(0, 0, 0, 0);
+	  background-color: rgba(0, 0, 0, 0);
+	  color: white; 
+  }
+  ion-list{
+    border-color: rgba(0, 0, 0, 0);
+	  background-color: rgba(0, 0, 0, 0);
+	  color: white; 
+  }
+img{
+    border-radius: 10%;
+}

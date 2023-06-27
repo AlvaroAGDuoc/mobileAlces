@@ -1,51 +1,62 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark" class="md">
     <ion-title>inicio</ion-title>
+    <ion-buttons slot="end">
+    <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png"
+    class="perfil" routerLink="/perfil"/>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid>
     <ion-row>
+      <ion-col>
+      <h1>Escoja una opción</h1>
+    </ion-col>
+  </ion-row>
+    <ion-row>
       <ion-col
-        ><ion-card routerLink="/liga">
-          <img
-            alt="Silhouette of mountains"
-            src="https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_tercera_chile.png"
+        ><ion-card routerLink="/liga" color="light">
+            <ion-row>
+          <ion-col>
+            <img
+            src="/assets/icon/football-champion-cup-svgrepo-com.svg"
           />
-          <ion-card-header>
-            <ion-card-title>Ligas</ion-card-title>
-          </ion-card-header>
+          </ion-col>
+          <ion-col class="centrado">
+            <ion-card-title class="ion">Ligas</ion-card-title>
+          </ion-col>
+        </ion-row>
         </ion-card></ion-col
       >
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
       <ion-col>
-        <ion-card routerLink="/jugadores">
+        <ion-card routerLink="/jugadores" color="danger" class="centrado ion-text-center">
           <img
-            alt="Silhouette of mountains"
-            src="https://images.vexels.com/media/users/3/198902/isolated/preview/212773a4ab37fb2570a9c556efb8a4b4-personaje-de-jugador-de-ftbol-masculino.png"
+            src="/assets/icon/football-stadium-svgrepo-com.svg" class="icono"
           />
           <ion-card-header>
             <ion-card-title>Jugadores</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row>
       <ion-col
-        ><ion-card routerLink="/flujos">
+        ><ion-card routerLink="/flujos" color="success" class="centrado ion-text-center">
           <img
-            alt="Silhouette of mountains"
-            src="https://cdn-icons-png.flaticon.com/512/3399/3399220.png"
+            src="/assets/icon/finance-bar-svgrepo-com.svg" class="icono"
           />
           <ion-card-header>
             <ion-card-title>Flujos</ion-card-title>
           </ion-card-header>
         </ion-card></ion-col
       >
-      <ion-col>
+<!--       <ion-col>
         <ion-card routerLink="/perfil">
           <img
             alt="Silhouette of mountains"
@@ -55,7 +66,7 @@
             <ion-card-title>Mi perfil</ion-card-title>
           </ion-card-header>
         </ion-card>
-      </ion-col>
+      </ion-col> -->
     </ion-row>
   </ion-grid>
 </ion-content>

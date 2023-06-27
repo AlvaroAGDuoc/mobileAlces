@@ -18,6 +18,7 @@ export class FlujosPage implements OnInit {
     const options: ApexCharts.ApexOptions = {
       chart: {
         type: 'pie',
+        width: 450
       },
       labels: [],
       series: [],
@@ -43,7 +44,11 @@ export class FlujosPage implements OnInit {
         labels: labels,
         series: series,
         colors: colors,
-      });
+        legend: {
+        position: 'bottom',
+        fontSize: '25px',
+        
+      }})
     });
   }
 }

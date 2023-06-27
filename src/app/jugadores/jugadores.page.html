@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -17,10 +17,11 @@
         [src]="'http://localhost:3001/imagen/' + jugador.fotografia"
       />
     </ion-avatar>
-    <ion-label> {{jugador.nombre}} {{jugador.apellido}}</ion-label>
+    <p> {{jugador.nombre}} {{jugador.apellido}}</p>
     <p>Categoria: {{ jugador.miembroClubs[0].equipo.categorium.nombre }}</p>
-    <ion-button routerLink="info/{{jugador.miembroClubs[0].id}}"
-      >Ver mas info</ion-button
-    >
+    <div class="ion-text-center">
+    <ion-button routerLink="info/{{jugador.miembroClubs[0].id}}" color="dark">
+      Ver mas info
+    </ion-button></div>
   </ion-card>
 </ion-content>

@@ -1,0 +1,11 @@
+ion-content {
+    --background: #dccab0;
+    --background: linear-gradient(to bottom, #a77d4d, #dccab0);
+
+  }
+  ion-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
