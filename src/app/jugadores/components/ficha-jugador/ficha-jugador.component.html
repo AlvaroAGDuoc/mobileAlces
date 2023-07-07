@@ -9,6 +9,17 @@
 
 <ion-content *ngIf="!loading">
   <ion-list class="ion-text-center">
+    <ion-item lines="none" class="ion-margin">
+      <ion-label>
+        <img
+          [alt]="info.jugador.usuario.nombre"
+          [src]="
+            'http://localhost:3001/imagen/' + info.jugador.usuario.fotografia
+          "
+          class="foto"
+        />
+      </ion-label>
+    </ion-item>
     <ion-item>
       <ion-label
         >{{ info.jugador.usuario.nombre }}
@@ -27,20 +38,12 @@
         {{ info.jugador.usuario.nacionalidad }}</ion-label
       >
     </ion-item>
-    <ion-item lines="none">
-      <ion-label>
-        <img
-          [alt]="info.jugador.usuario.nombre"
-          [src]="
-            'http://localhost:3001/imagen/' + info.jugador.usuario.fotografia
-          "
-        />
-      </ion-label>
-    </ion-item>
+  <div class="negro">
     <ion-label>
-      G: {{ info.goles }}, A: {{ info.asistencias }}, TA:
-      {{ info.tarjetasAmarillas }}, TR: {{ info.tarjetasRojas }}, P:
+      <img src="/assets/icon/balon.svg" class="icono" alt=""> {{ info.goles }} <img src="/assets/icon/asistencias.svg" class="icono" alt=""> {{ info.asistencias }} <img src="/assets/icon/tarjetaamarilla.svg" class="icono" alt="">
+      {{ info.tarjetasAmarillas }}<img src="/assets/icon/tarjetaroja.svg" class="icono" alt=""> {{ info.tarjetasRojas }} <img src="/assets/icon/partidosjugados.svg" alt="" class="icono">
       {{ info.partidos }}
     </ion-label>
+  </div>
   </ion-list>
 </ion-content>

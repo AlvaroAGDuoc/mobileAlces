@@ -62,23 +62,18 @@
           ><div class="circle3">{{i + 1}}</div></ion-col
         >
 
-        <ion-col size="6" class="estadistica2">
-          <ion-row class="ion-align-items-center">
+        <ion-col size="6" class="estadistica2 ion-align-content-start">
             <ion-col size="3">
-              <div>
+              <div >
                 <img
-                  [src]="
-              'http://localhost:3001/imagen/' + estadistica.equipo.escudo
-            "
+                  [src]="'http://localhost:3001/imagen/' + estadistica.equipo.escudo"
                   [alt]="estadistica.equipo.nombre"
-                  class="escudo"
-                />
+                  class="escudo"/>
               </div>
             </ion-col>
-            <ion-col class="ion-margin-top" size="9">
+            <ion-col class="ion-margin-top ion-text-center" size="9">
               <div>{{estadistica.equipo.nombre}}</div>
             </ion-col>
-          </ion-row>
         </ion-col>
         <ion-col size="1.5" class="pts ion-margin-top"
           >{{estadistica.partidosJugados}}</ion-col
