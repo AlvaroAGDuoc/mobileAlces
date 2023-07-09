@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlBase: 'http://localhost:3001/api/',
+  urlBase: 'https://serveralces-production.up.railway.app/api/',
 };
 
 /*

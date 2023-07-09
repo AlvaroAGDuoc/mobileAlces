@@ -14,7 +14,8 @@
         <img
           [alt]="info.jugador.usuario.nombre"
           [src]="
-            'http://localhost:3001/imagen/' + info.jugador.usuario.fotografia
+            'https://serveralces-production.up.railway.app/imagen/' +
+            info.jugador.usuario.fotografia
           "
           class="foto"
         />
@@ -38,12 +39,19 @@
         {{ info.jugador.usuario.nacionalidad }}</ion-label
       >
     </ion-item>
-  <div class="negro">
-    <ion-label>
-      <img src="/assets/icon/balon.svg" class="icono" alt=""> {{ info.goles }} <img src="/assets/icon/asistencias.svg" class="icono" alt=""> {{ info.asistencias }} <img src="/assets/icon/tarjetaamarilla.svg" class="icono" alt="">
-      {{ info.tarjetasAmarillas }}<img src="/assets/icon/tarjetaroja.svg" class="icono" alt=""> {{ info.tarjetasRojas }} <img src="/assets/icon/partidosjugados.svg" alt="" class="icono">
-      {{ info.partidos }}
-    </ion-label>
-  </div>
+    <div class="negro">
+      <ion-label>
+        <img src="/assets/icon/balon.svg" class="icono" alt="" />
+        {{ info.goles }}
+        <img src="/assets/icon/asistencias.svg" class="icono" alt="" />
+        {{ info.asistencias }}
+        <img src="/assets/icon/tarjetaamarilla.svg" class="icono" alt="" />
+        {{ info.tarjetasAmarillas
+        }}<img src="/assets/icon/tarjetaroja.svg" class="icono" alt="" />
+        {{ info.tarjetasRojas }}
+        <img src="/assets/icon/partidosjugados.svg" alt="" class="icono" />
+        {{ info.partidos }}
+      </ion-label>
+    </div>
   </ion-list>
 </ion-content>

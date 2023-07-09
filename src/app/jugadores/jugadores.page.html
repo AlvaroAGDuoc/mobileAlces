@@ -14,14 +14,15 @@
     <ion-avatar slot="start">
       <img
         [alt]="jugador.nombre"
-        [src]="'http://localhost:3001/imagen/' + jugador.fotografia"
+        [src]="'https://serveralces-production.up.railway.app/imagen/' + jugador.fotografia"
       />
     </ion-avatar>
-    <p> {{jugador.nombre}} {{jugador.apellido}}</p>
+    <p>{{jugador.nombre}} {{jugador.apellido}}</p>
     <p>Categoria: {{ jugador.miembroClubs[0].equipo.categorium.nombre }}</p>
     <div class="ion-text-center">
-    <ion-button routerLink="info/{{jugador.miembroClubs[0].id}}" color="dark">
-      Ver mas info
-    </ion-button></div>
+      <ion-button routerLink="info/{{jugador.miembroClubs[0].id}}" color="dark">
+        Ver mas info
+      </ion-button>
+    </div>
   </ion-card>
 </ion-content>

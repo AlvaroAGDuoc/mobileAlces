@@ -11,15 +11,15 @@
 
 <ion-content *ngIf="!loading">
   <ion-item lines="none" class="ion-margin">
-  <img
-    [src]="
+    <img
+      [src]="
 
-     'http://localhost:3001/imagen/' + usuario.fotografia
+     'https://serveralces-production.up.railway.app/imagen/' + usuario.fotografia
 
 "
-    [alt]="usuario.nombre"
-  />
-</ion-item>
+      [alt]="usuario.nombre"
+    />
+  </ion-item>
   <ion-list>
     <ion-item>
       <ion-text color="ligth">{{usuario.nombre}} {{usuario.apellido}}</ion-text>
