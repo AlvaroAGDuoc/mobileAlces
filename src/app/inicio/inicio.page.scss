@@ -4,7 +4,13 @@ ion-content {
   --background: linear-gradient(to bottom, #a77d4d, #dccab0);
 }
 .perfil{
-  height: 10vw
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 25% 25%; 
+  margin-top: auto;
+  margin-bottom: auto;
 }
 ion-card{
   --background: #00000000;
@@ -12,6 +18,9 @@ ion-card{
 }
 .icono{
   height: 15vh;
+}
+.iconoLiga{
+  height: 20vh;
 }
 img{
   margin-top: 3vh;
@@ -25,4 +34,11 @@ h1{
 }
 ion-card-title{
   font-weight: 700;
+}
+
+.logout{
+  width: 10vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  
 }

@@ -1,8 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark" class="md">
+    <ion-buttons slot="start" (click)="desconectar()" >
+      <img src="/assets/icon/logout.svg" class="logout"/></ion-buttons>
     <ion-title>inicio</ion-title>
-    <ion-buttons slot="end">
-    <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png"
+
+    <ion-buttons slot="end" *ngIf="!loading">
+    <img
+    [src]="
+
+    'https://serveralces-production.up.railway.app/imagen/' + usuario.fotografia
+
+"
+     [alt]="usuario.nombre"
     class="perfil" routerLink="/perfil"/>
     </ion-buttons>
   </ion-toolbar>
@@ -16,25 +25,22 @@
     </ion-col>
   </ion-row>
     <ion-row>
-      <ion-col
-        ><ion-card routerLink="/liga" color="light">
-            <ion-row>
+      <ion-col>
+        <ion-card routerLink="/liga" color="light" class="centrado ion-text-center">
+          <ion-row>
           <ion-col>
             <img
-            src="/assets/icon/football-champion-cup-svgrepo-com.svg"
+            src="/assets/icon/football-champion-cup-svgrepo-com.svg"  class="iconoLiga"
           />
           </ion-col>
           <ion-col class="centrado">
-            <ion-card-title class="ion">Ligas</ion-card-title>
+            <ion-card-title>Ligas</ion-card-title>
           </ion-col>
         </ion-row>
-        </ion-card></ion-col
-      >
+        </ion-card>
+      </ion-col>
 
     </ion-row>
-  </ion-grid>
-
-  <ion-grid>
     <ion-row>
       <ion-col>
         <ion-card routerLink="/jugadores" color="danger" class="centrado ion-text-center">

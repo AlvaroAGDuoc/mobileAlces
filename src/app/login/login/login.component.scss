@@ -1,5 +1,6 @@
-+ ion-content {
+ion-content {
   --background: #dccab0;
+  --background: linear-gradient(to bottom, #a77d4d, #dccab0);
 }
 ion-icon {
   margin-right: 5%;
@@ -15,7 +16,6 @@ ion-icon {
   padding: 20px;
 }
 .logo {
-  width: 90%;
   height: 90%;
   align-self: center;
 }
